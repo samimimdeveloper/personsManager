@@ -5,7 +5,7 @@ import "./person.css";
 const Person = ({fullname,personDelet,changed}) => {
     return ( <div className="person" >
         <p>
-            {`${fullname} .  `}
+            {`${fullname}   `}
         </p>
         <input type="text" placeholder={fullname} onChange={changed}/>
         <button onClick={personDelet}>حذف </button>
