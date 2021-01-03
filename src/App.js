@@ -25,7 +25,10 @@ class App extends Component {
     toast.error(`${person.fullname} با موفقیت حذف شد ,`, {
       position: "bottom-left",
       closeOnClick: true,
+      closeButton:true
     });
+
+   
   };
   handleNameChange = (event, id) => {
     const { persons: allPersons } = this.state;
@@ -43,12 +46,12 @@ class App extends Component {
     const persons = [...this.state.persons];
     const person = {
       id: Math.floor(Math.random() * 1000),
-      fullname: this.state.person
+      fullname: this.state.person,
     };
     if (person.fullname !== "" && person.fullname !== " ") {
       persons.push(person);
       this.setState({ persons, person: "" });
-      toast.success("شخص جدید اضافه شد .", {
+      toast.success("شخص جدیدی اضافه شد .", {
         position: "bottom-right",
         closeButton: true,
         closeOnClick: true,

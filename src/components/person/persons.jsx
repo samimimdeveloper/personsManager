@@ -2,10 +2,10 @@ import React from "react";
 
 import Person from "./Person";
 
-const Persons = ({ persons, personDelet, personChange }) => {
+const Persons = ({ persons, personDelet, personChange}) => {
   return (
     <div>
-      {persons.map(person => (
+      {persons.map((person) => (
         <Person
           key={Person.id}
           fullname={person.fullname}
