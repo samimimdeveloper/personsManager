@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Persons from "./components/person/persons";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
 import { ToastContainer, toast } from "react-toastify";
+import Background from './img/mm.jpg'
 // import Person from "./components/person/Person";
 class App extends Component {
   state = {
@@ -87,7 +88,12 @@ class App extends Component {
     }
 
     return (
-      <div className="rtl text-center">
+      <div className="rtl text-center"style={{
+        background: `url(${Background})`,
+        backgroundPosition: 'center',
+backgroundSize: 'cover',
+backgroundRepeat: 'no-repeat'
+      }}>
         <div className="alert alert-info">
           <h2>مدیریت کننده اشخاص</h2>
         </div>
