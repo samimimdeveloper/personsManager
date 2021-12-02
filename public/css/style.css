@@ -4,3 +4,12 @@
     font-weight: normal;    
     font-style: normal;
 }
+body{
+background-image: url("../photo/background.jpg");
+background-repeat: no-repeat, repeat;
+background-position: center;
+background-size: cover;
+height: 100vh;
+padding: 26px;
+
+}
