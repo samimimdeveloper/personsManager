@@ -4,7 +4,7 @@ import Person from './components/person/Person';
 class App extends Component {
   state = {
     persons: [
-      { id: 1, fullname: "حسین محمدی" },
+      { id: 1, fullname: "حسین شجاعی " },
       { id: 2, fullname: "یاسر زمانیان" },
       { id: 3, fullname: " منصور نقی زاده" },
     ],
